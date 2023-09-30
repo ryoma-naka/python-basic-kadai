@@ -1,0 +1,10 @@
+def calculate(price,tax):
+  
+  #10%を計算用にintの0.1に変換
+  tax=tax.replace('%', '')
+  tax = int(tax)/100
+
+  print(price +(price * tax))
+
+
+calculate(1000,"10%")
